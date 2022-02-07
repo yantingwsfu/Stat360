@@ -1,0 +1,79 @@
+---
+title: "lab_1"
+author: "Yan Ting Lala Wong"
+date: "07/02/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lab 1
+# Name: Yan Ting Wong
+# SFU ID: 301386593
+
+#1 
+# Install the rpart and earth packages and read the help files for 
+# the rpart() and earth() functions.
+# Inspect the source code for rpart() and earth()
+
+install.packages("rpart","earth")
+
+library(rpart)
+library(earth)
+
+??rpart
+??earth
+
+rpart
+earth
+earth:::earth.default
+
+#2 
+# Create an R script called mars.R that includes the following functions.
+
+#3
+# Create a function called mars() that takes three arguments:
+
+mars <- function(formula, data, contol) {
+  
+  x <- fwd_stepwise()
+
+  y <- bwd_stepwise(x)
+
+  return(y) # Question 6 return the output of bwd_stepwise()
+}
+
+
+#4
+# Write empty mars.control(), fwd_stepwise() functions that each take 
+# no arguments and return an empty list.
+
+mars.control <- function() {
+  
+  control_lst <- list()
+  
+  return(control_lst)
+}
+
+
+fwd_stepwise <- function() {
+  
+  stepwise_lst <- list()
+  
+  return(stepwise_lst)
+  
+}
+
+#5
+# bwd_stepwise() should take the output of fwd_stepwise() as input, 
+# and for now should return an empty list.
+
+bwd_stepwise <- function(stepwise_lst) {
+  
+  bwd_stepwise_lst <- list()
+  
+  return(bwd_stepwise_lst)
+  
+}
