@@ -58,7 +58,7 @@ mars <- function(formula, data, contol=list()) {
   
   fwd_out <- fwd_stepwise(formula, data) # Add formula and data arguments
 
-  bwd_out <- bwd_stepwise(fwd_out)
+  bwd_out <- bwd_stepwise(fwd_out, data)
 
   return(bwd_out) 
 }
@@ -79,7 +79,7 @@ fwd_stepwise <- function(formula, data) # Add formula and data arguments
   
 }
 
-bwd_stepwise <- function(bwd_in) {
+bwd_stepwise <- function(bwd_in, data) {
   
   bwd_lst <- step(bwd_in) # relace with step()
   
@@ -97,6 +97,6 @@ tell you about where this function found the data in part 3?
 ```{r}
 testdata <- data
 rm(data)
-mars(y~., data = data)
+mars(y~., data = testdata)
 ```
 
