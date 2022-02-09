@@ -1,7 +1,7 @@
 ---
 title: Lab 4
 author: "Pulindu Ratnasekera"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}

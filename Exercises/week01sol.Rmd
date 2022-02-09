@@ -1,6 +1,6 @@
 ---
 title: "Stat 360 Week 1 exercises"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}

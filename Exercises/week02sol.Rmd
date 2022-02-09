@@ -2,7 +2,7 @@
 title: "Week 2 Exercise Solutions"
 author: "Brad McNeney"
 output: 
-  html_document:
+  pdf_document:
     fig_width: 6
     fig_height: 4
 ---
